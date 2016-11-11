@@ -1,0 +1,23 @@
+{
+  "name": "egypt_tour_landing",
+  "authors": [
+    "Svyatoslav <barsic.plus@gmail.com>"
+  ],
+  "description": "Landing page for Jupiter Tour",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://indelio.com.ua",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "animate.css": "^3.5.2",
+    "wow": "wowjs#^1.1.2"
+  }
+}

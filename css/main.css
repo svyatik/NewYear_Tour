@@ -1,0 +1,914 @@
+/*
+ * @package Jupiter Tour
+ * @subpage New Year tour
+ * version 1.0
+ * @date 11.11.2016
+ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif !important;
+  overflow-x: hidden;
+  background-image: url(../img/background-cover-second.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* wrapper div for all page with shadow */
+.shadow-body {
+  padding-left: 0;
+  padding-right: 0;
+
+  -webkit-box-shadow: 0px 0px 94px 41px rgba(255,255,255,.45);
+  -moz-box-shadow: 0px 0px 94px 41px rgba(255,255,255,.45);
+  box-shadow: 0px 0px 94px 41px rgba(255,255,255,.45);
+}
+
+
+/* HEADER */
+/**********/
+.header {
+  background-image: url(../img/header.png);
+  text-align: center;
+  color: #fff;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*header - title */
+.header p {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 8px rgba(0,0,0,.8);
+  line-height: 1.2;
+}
+
+.header .shadow {
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  padding: 35px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .header p {
+    font-size: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+/* WELCOME */
+/***********/
+.welcome {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  background-color: #fff;
+}
+
+/* welcome - title */
+.welcome p {
+  font-size: 36px;
+  color: #34495e;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+
+@media screen and (max-width: 768px) {
+  .welcome p {
+    font-size: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+/* BLOCK SECOND */
+/**********/
+.block-second {
+  background-image: url(../img/block-second.png);
+  text-align: center;
+  color: #fff;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*header - title */
+.block-second p {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 8px rgba(0,0,0,.8);
+  line-height: 1.2;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto 5px auto;
+}
+
+.block-second .shadow {
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  padding: 35px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .block-second p {
+    text-align: center;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+/* GRAYSNOW */
+/************/
+.graysnow {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: #ecf0f1;
+  background-image: url(../img/graysnow.png);
+  background-position: 85% center;
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+  text-align: center;
+}
+
+/* graysnow - title */
+.graysnow p {
+  font-size: 36px;
+  color: #34495e;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+/* graysnow - style for button */
+.graysnow .contact-btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* graysnow - second type of container, with inner container */
+.graysnow.inner {
+  background-image: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* graysnow - style for inner container */
+.graysnow-inner {
+  width: 100%;
+  background-image: url(../img/graysnow.png);
+  background-position: 85% center;
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+/* graysnow - tour container */
+.graysnow .tour-container {
+  width: 100%;
+  height: 0;
+  transition: height .5s;
+}
+/* !Change height as you need */
+/* Of course, you can try add auto */
+.graysnow .tour-container.active {
+  height: 450px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .graysnow p {
+    font-size: 24px;
+  }
+  .graysnow .contact-btn {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+/* FEATURE */
+/***********/
+.feature {
+  height: 750px;
+  background-image: url(../img/feature-block-first.png);
+}
+
+/* feature - block with santa and ellipse */
+.feature-santa {
+  position: relative;
+  margin-top: 125px;
+}
+
+/* feature - ellipse style */
+.feature-ellipse {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(52,152,219,.8);
+  border-radius: 50%;
+  position: relative;
+  transition: all .2s;
+  left: 50%;
+  margin-left: -200px;
+}
+
+/* feature - text in ellipse */
+.feature .feature-text {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  top: -110px;
+  position: relative;
+}
+
+/* feature - custom style for different ellipses */
+/* green */
+.feature-santa-green {
+  margin-top: 250px;
+}
+.feature-santa-green .feature-ellipse {
+  background-color: rgba(46,204,113,.8);
+}
+
+/* orange */
+.feature-santa-orange {
+  margin-top: 250px;
+}
+.feature-santa-orange .feature-ellipse {
+  background-color: rgba(230,126,34,.8);
+}
+
+/* magenta */
+.feature-santa-magenta .feature-ellipse {
+  background-color: rgba(155,89,182,.8);
+}
+
+/* feature - ellipse hover */
+.feature-santa:hover .feature-ellipse {
+  width: 425px;
+  height: 425px;
+  margin-left: -212.5px;
+  margin-top: -12.5px;
+}
+
+/* feature - santa style */
+.feature-santa .santa {
+  margin-left: -135px;
+  position: absolute;
+  left: 50%;
+  top: -80px;
+}
+
+/* feature - second block style */
+.feature-two {
+  background-image: url(../img/feature-block-second.png);
+}
+
+
+@media screen and (max-width: 768px) {
+  .feature {
+    height: auto;
+  }
+
+  .feature-santa-green,
+  .feature-santa-orange {
+    margin-top: 125px;
+  }
+}
+
+
+/* SANTA FIRST */
+/****************/
+/* style and animation of parts */
+.santa #firstsanta-head,
+.santa #firstsanta-hand {
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-duration: 6.0s;
+}
+.santa #firstsanta-head {
+  animation-name: firstsanta-head;
+  transform-origin: 50% 60%;
+  animation-delay: 1s;
+}
+
+.santa #firstsanta-hand {
+  animation-name: firstsanta-hand;
+  transform-origin: 10% 10%;
+  animation-delay: 2s;
+}
+
+@keyframes firstsanta-head {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(-6deg);
+  }
+  20% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes firstsanta-hand {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(-25deg);
+  }
+  20% {
+    transform: rotate(0);
+  }
+  60% {
+    transform: rotate(0);
+  }
+  70% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: rotate(0);
+  }
+}
+
+
+/* SANTA SECOND */
+/****************/
+/* style and animation of parts */
+.santa #secondsanta-head,
+.santa #secondsanta-hand,
+.santa #secondsanta-lefthand,
+.santa #thirdsanta-body {
+  animation-duration: 6.0s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+.santa #secondsanta-head {
+  animation-name: secondsanta-head;
+  transform-origin: 50% 50%;
+  animation-delay: 4.5s;
+}
+
+.santa #secondsanta-hand {
+  animation-name: secondsanta-hand;
+  transform-origin: -10% 90%;
+  animation-delay: 5s;
+}
+
+.santa #secondsanta-lefthand {
+  animation-name: secondsanta-lefthand;
+  transform-origin: 100% 10%;
+  animation-delay: 4s;
+}
+
+.santa #thirdsanta-body {
+  animation-name: thirdsanta-body;
+  transform-origin: 50% 50%;
+  animation-delay: 1.5s;
+}
+
+@keyframes thirdsanta-body {
+  0% {
+    transform: translate(0px,0px);
+  }
+  10% {
+    transform: translate(0px,35px);
+  }
+  15% {
+    transform: translate(0px,35px);
+  }
+  25% {
+    transform: translate(0px,0px);
+  }
+}
+
+@keyframes secondsanta-head {
+  0% {
+    transform: translate(0px,0px);
+  }
+  5% {
+    transform: translate(0px,5px);
+  }
+  10% {
+    transform: translate(0px,0px);
+  }
+}
+
+@keyframes secondsanta-hand {
+  0% {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(30deg);
+  }
+  10% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(30deg);
+  }
+  20% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes secondsanta-lefthand {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(30deg);
+  }
+  20% {
+    transform: rotate(0);
+  }
+}
+
+
+/* SANTA THIRD */
+/****************/
+/* style and animation of parts */
+.santa #thirdsanta-righthand,
+.santa #thirdsanta-lefthand {
+  animation-duration: 6.0s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+.santa #thirdsanta-righthand {
+  animation-name: thidsanta-righthand;
+  transform-origin: -10% 90%;
+}
+
+.santa #thirdsanta-lefthand {
+  animation-name: thidsanta-lefthand;
+  transform-origin: 90% 80%;
+}
+
+@keyframes thidsanta-righthand {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(30deg);
+  }
+  20% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(30deg);
+  }
+  40% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes thidsanta-lefthand {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(-30deg);
+  }
+  20% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(-30deg);
+  }
+  40% {
+    transform: rotate(0);
+  }
+}
+
+
+/* SANTA FOURTH */
+/****************/
+/* style and animation of parts */
+.santa #fourthsanta-hand,
+.santa #fourthsanta-gift,
+.santa #fourthsanta-leg {
+  animation-duration: 6.0s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+.santa #fourthsanta-hand {
+  animation-name: fourthsanta-hand;
+  transform-origin: -10% 90%;
+}
+
+.santa #fourthsanta-gift {
+  animation-name: fourthsanta-gift;
+  transform-origin: -10% 90%;
+  animation-delay: 1.5s;
+}
+
+.santa #fourthsanta-leg {
+  animation-name: fourthsanta-leg;
+  transform-origin: 50% 0%;
+  animation-delay: 2.5s;
+}
+
+@keyframes fourthsanta-hand {
+  0% {
+    transform: rotate(0);
+  }
+  6% {
+    transform: rotate(22deg);
+  }
+  12% {
+    transform: rotate(0);
+  }
+  18% {
+    transform: rotate(22deg);
+  }
+  24% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes fourthsanta-gift {
+  0% {
+    transform: rotate(0);
+  }
+  6% {
+    transform: rotate(15deg);
+  }
+  12% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes fourthsanta-leg {
+  0% {
+    transform: rotate(0) translate(0px,0px);
+  }
+  10% {
+    transform: rotate(-32deg) translate(-10px,8px);
+  }
+  25% {
+    transform: rotate(-32deg) translate(-10px,8px);
+  }
+  35% {
+    transform: rotate(0) translate(0px,0px);
+  }
+}
+
+
+/* WELCOME */
+/**********/
+.companies {
+  padding: 50px 0 20px 0;
+  color: #34495e;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+/* companies - title */
+.companies > p {
+  font-size: 36px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+/* companies - block with travel companies logo */
+.companies .tourism-logos {
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+/* companies - tourism link */
+.companies .tourism-logos > a {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+/* companies - tourism link image */
+.companies .tourism-logos > a > img {
+  height: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .companies > p {
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .companies .tourism-logos > a {
+    margin-bottom: 10px;
+  }
+}
+
+
+/* BLOCK third */
+/**********/
+.block-third {
+  background-image: url(../img/block-third.png);
+  text-align: center;
+  color: #fff;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*header - title */
+.block-third p {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(0,0,0,.8);
+  line-height: 1.2;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.block-third .shadow {
+  background-color: rgba(0,0,0,.6);
+  width: 100%;
+  padding: 35px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .block-third p {
+    text-align: center;
+    font-size: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+/* CONTACT */
+/*********/
+.contact {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* contact - style for all p elements */
+.contact p {
+  color: #34495e;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 0;
+  /*font-weight: 500;*/
+}
+.contact p:first-of-type {
+  margin-bottom: 30px;
+}
+
+/* contact - contact form */
+.contact .form-contact {
+  width: 100%;
+  max-width: 520px;
+  margin: 75px auto 0 auto;
+}
+
+/* contact - contact form inputs */
+.contact .form-contact input {
+  width: 100%;
+  display: block;
+  border: 2px solid #e6e6e6;
+  font-size: 20px;
+  padding: 10px 30px;
+  outline: none;
+}
+.contact .form-contact input:focus {
+  border-color: #e74c3c;
+}
+.contact .form-contact input:first-of-type {
+  margin-bottom: 15px;
+}
+
+/* contact - 'or' element before telephone and email inputes */
+.contact .form-contact > span {
+  font-size: 24px;
+  color: #e6e6e6;
+  display: block;
+  margin: 10px 0;
+}
+
+/* contact - submit button */
+.contact .form-contact input[type=submit] {
+  text-align: center;
+  background-color: #34495e;
+  border: 2px solid #34495e;
+  text-transform: uppercase;
+  margin-top: 15px;
+  color: #fff;
+  transition: all .2s;
+}
+.contact .form-contact input[type=submit]:focus {
+  background-color: rgba(52,73,94,.5);
+}
+.contact .form-contact input[type=submit]:hover {
+  background-color: transparent;
+  color: #34495e;
+}
+
+/* contact - link style after form */
+.contact .news-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #34495e;
+  text-transform: uppercase;
+  margin-top: 35px;
+  display: inline-block;
+}
+
+/* contact - mobile style */
+@media screen and (max-width: 768px) {
+  .contact p {
+    font-size: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .contact .form-contact {
+    width: 90%;
+  }
+}
+
+
+/* FEATURES BLOCKS STYLE */
+/* feature-block - short description and contact link button */
+.feature-block {
+  background-color: rgba(52,73,94,.6);
+  padding: 30px 45px;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+/* Just simple 'variable' for background block settins */
+.background-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* 
+ * Just for Fun :) 
+ * Simple and cool button design
+ */
+.contact-btn {
+  font-size: 20px;
+  color: #ecf0f1;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 7px 24px;
+  border: 2px solid #bdc3c7;
+  margin-top: 15px;
+  position: relative;
+  transition: all .3s;
+}
+
+/* Button - hover */
+.contact-btn:hover,
+.contact-btn.active {
+  border-color: #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Button blue background (as preudo element) */
+.contact-btn::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  background-color: #34495e;
+  transition: all .3s;
+}
+/* Button blue background hover effect */
+.contact-btn:hover::before,
+.contact-btn.active::before {
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+
+/* Button text z-index position (under blue background) */
+.contact-btn > span {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Button 4-lines style */
+.contact-btn .btn-line {
+  position: absolute;
+  opacity: 0;
+  background-color: #fff;
+  transition: all .3s;
+}
+
+.contact-btn:hover .btn-line,
+.contact-btn.active .btn-line {
+  opacity: 1;
+}
+
+/* Button line - top left corner */
+.contact-btn .btn-topleft {
+  top: -2px;
+  width: 150px;
+  height: 2px;
+  left: -200px;
+}
+.contact-btn:hover .btn-topleft,
+.contact-btn.active .btn-topleft {
+  left: 0;
+}
+
+/* Button line - bottom left corner */
+.contact-btn .btn-bottomleft {
+  bottom: -200px;
+  width: 2px;
+  height: 100%;
+  left: -2px;
+}
+.contact-btn:hover .btn-bottomleft,
+.contact-btn.active .btn-bottomleft {
+  bottom: 0;
+}
+
+/* Button line - bottom right corner */
+.contact-btn .btn-bottomright {
+  bottom: -2px;
+  width: 150px;
+  height: 2px;
+  right: -200px;
+}
+
+.contact-btn:hover .btn-bottomright,
+.contact-btn.active .btn-bottomright {
+  right: 0;
+}
+
+/* Button line - top right corner */
+.contact-btn .btn-topright {
+  top: -200px;
+  width: 2px;
+  height: 100%;
+  right: -2px;
+}
+.contact-btn:hover .btn-topright,
+.contact-btn.active .btn-topright {
+  top: 0;
+}
+
+
+/*White version of button */
+.contact-btn.btn-white {
+  color: #7f8c8d;
+  border-color: #7f8c8d;
+}
+.contact-btn.btn-white:hover,
+.contact-btn.btn-white.active {
+  border-color: #2c3e50;
+  color: #fff;
+}
+.contact-btn.btn-white .btn-line {
+  background-color: #2c3e50;
+}
